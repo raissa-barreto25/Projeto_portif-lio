@@ -1,75 +1,88 @@
+from __future__ import print_function
 import datetime
 import os.path
-
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
 
-# Se modificar esses escopos, delete o arquivo token.json.
-SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
+SCOPES = ['https://www.googleapis.com/auth/calendar']
 
-def main():
-    """Mostra como se autenticar e listar os próximos eventos do Google Calendar."""
+def conectar_google_calendar():
     creds = None
-    # O arquivo token.json armazena os tokens de acesso e atualização do usuário,
-    # e é criado automaticamente na primeira vez que o fluxo de autorização é concluído.
-    if os.path.exists("token.json"):
-        creds = Credentials.from_authorized_user_file("token.json", SCOPES)
-    
-    # Se não houver credenciais válidas disponíveis, o usuário é autenticado.
+    if os.path.exists('token.json'):
+        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                "credentials.json", SCOPES
-            )
+            flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
-        # Salva as credenciais para a próxima execução
-        with open("token.json", "w") as token:
+        with open('token.json', 'w') as token:
             token.write(creds.to_json())
 
-    try:
-        service = build("calendar", "v3", credentials=creds)
-
-        # Chama a API do Google Calendar
-        now = datetime.datetime.now(datetime.UTC).isoformat() + "Z"  # RFC3339 format
-        print("Obtendo os próximos 10 eventos...")
-        events_result = (
-            service.events()
-            .list(
-                calendarId="primary",
-                timeMin=now,
-                maxResults=10,
-                singleEvents=True,
-                orderBy="startTime",
-            )
-            .execute()
-        )
-        events = events_result.get("items", [])
-
-        if not events:
-            print("Nenhum evento futuro encontrado.")
-            return
-
-        # Imprime os eventos
-        for event in events:
-            start = event["start"].get("dateTime", event["start"].get("date"))
-            print(f"{start} - {event['summary']}")
-
-    except HttpError as error:
-        print(f"Ocorreu um erro na API: {error}")
+    service = build('calendar', 'v3', credentials=creds)
+    return service
 
 
-if __name__ == "__main__":
-    main()
-# Use o código com cuidado.
+def registrar_pedido(nome_cliente, sabor, data_entrega, observacoes=""):
+    service = conectar_google_calendar()
 
-# Como executar no VS Code:
-# Salve o arquivo credentials.json (baixado do Google Cloud Console) na mesma pasta que agenda_script.py.
-# Abra o terminal integrado no VS Code (atalho Ctrl + ').
-# Execute o script:
-# bash
-# python agenda_script.py
+    # 🗓️ Converte a data e calcula diferença
+    hoje = datetime.date.today()
+    data_entrega_date = datetime.datetime.strptime(data_entrega, "%Y-%m-%d").date()
+    diferenca = (data_entrega_date - hoje).days
+
+    # 🚫 Regra 1: Pedido com pelo menos 2 dias de antecedência
+    if diferenca < 2:
+        print("❌ O agendamento deve ser feito com pelo menos 2 dias de antecedência.")
+        return
+
+    # 🚫 Regra 2: Bloquear certos dias (exemplo: domingo e feriados)
+    dias_bloqueados = [
+        datetime.date(2025, 12, 25),  # Natal
+        datetime.date(2025, 1, 1),    # Ano Novo
+    ]
+    if data_entrega_date.weekday() == 6 or data_entrega_date in dias_bloqueados:
+        print("🚫 Esse dia não está disponível para agendamento.")
+        return
+
+    # 📊 Regra 3: Limite de pedidos por dia
+    eventos_existentes = service.events().list(
+        calendarId='primary',
+        timeMin=f"{data_entrega}T00:00:00-03:00",
+        timeMax=f"{data_entrega}T23:59:59-03:00",
+        singleEvents=True
+    ).execute()
+
+    limite_diario = 3  # máximo de pedidos por dia
+    if len(eventos_existentes.get('items', [])) >= limite_diario:
+        print("⚠️ Limite diário de pedidos atingido para essa data.")
+        return
+
+    # ✅ Cria o evento
+    evento = {
+        'summary': f'Pedido de {nome_cliente} - {sabor}',
+        'description': observacoes,
+        'start': {
+            'dateTime': f'{data_entrega}T09:00:00',
+            'timeZone': 'America/Sao_Paulo',
+        },
+        'end': {
+            'dateTime': f'{data_entrega}T10:00:00',
+            'timeZone': 'America/Sao_Paulo',
+        },
+    }
+
+    event = service.events().insert(calendarId='primary', body=evento).execute()
+    print(f"✅ Pedido registrado com sucesso: {event.get('htmlLink')}")
+
+
+# 💡 Exemplo de uso
+registrar_pedido(
+    nome_cliente="Maria Clara",
+    sabor="Red Velvet",
+    data_entrega="2025-11-08",  # teste alterando a data
+    observacoes="Retirar na loja às 15h"
+)
