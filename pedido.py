@@ -1,3 +1,7 @@
+from bd_vitoriasfestas import banco
+from cadastro import cadastro
+
+
 while True:
     
     opcao = input("Escolha uma opção: \n"
@@ -221,7 +225,6 @@ while True:
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
                     "Choconinho, Óreo, Casadinho.")
-                    altura_bolo = input("Deseja bolo alto ou normal? ")
                     tema_bolo = input("Qual tema e cores do bolo? ")
                     escolha_doces = input("Escolha os doces desejados (até 05 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
@@ -232,6 +235,18 @@ while True:
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
                     "Croquete de Calabresa, Enroladinho de Salsicha.")
+
+            novo_pedido = {
+                "Kit" : produto,
+                "Massa" : massa_bolo,
+                "Recheio" : recheio_bolo,
+                "Tema" : tema_bolo,
+                "Doces" : escolha_doces,
+                "Salgados" : escolha_salgado
+            }
+
+            banco["Pedido"].append(novo_pedido)
+            print("Pedido realizado com sucesso.")
 
     match opcao:
         case "2":
@@ -344,3 +359,73 @@ while True:
                     "Paçoca, Sensação, Ninho, \n" 
                     "Choconinho, Óreo, Casadinho.")
                     tema_bolo = input("Qual tema e cores do bolo? ")
+
+            novo_pedido = {
+                "Bolo" : bolo,
+                "Massa" : massa_bolo,
+                "Recheio" : recheio_bolo,
+                "Tema" : tema_bolo
+            }
+
+            banco["Pedido"].append(novo_pedido)
+            print("Cadastro realizado com sucesso.")
+    
+    match opcao:
+        case "3":
+            print("Doces individuais \n"
+                  "Unidade - R$ 0,90")
+            
+            opcao_doces = int(input("Quantos doces deseja ?"))
+            escolha_doce = input("Escolha os doces desejados : \n"
+                    "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
+                    "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
+            valor_doces = opcao_doces * 0.90
+            print(f"O valor dos seus doces será de: {valor_doces}")
+
+            novo_pedido = {
+                "Quantidade" : opcao_doces,
+                "Doces" : escolha_doce,
+                "Valor" : valor_doces,
+
+            }
+
+            banco["Pedido"].append(novo_pedido)
+            print("Cadastro realizado com sucesso.")
+
+    match opcao:
+        case "4":
+            print("Salgados individuais \n"
+                  "1- Unidade (Frito)- R$ 0,90 \n" \
+                  "2- Unidade (Congelado) - 0,80")
+            
+            opcao_salgados = int(input("Quantos salgados deseja ?"))
+            tipo_salgados = input("Deseja Frito ou Congelado? ").upper()
+            if tipo_salgados == "FRITO":
+                escolha_salgado = input("Escolha os salgados desejados : \n"
+                        "Coxinha, Empada de Frango, Empada de Carne, \n" 
+                        "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
+                        "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
+                        "Croquete de Calabresa, Enroladinho de Salsicha.\n")
+                valor_salgados = opcao_salgados * 0.90
+                print(f"O valor dos seus doces será de: {valor_salgados}")
+            elif tipo_salgados == "CONGELADO": 
+                escolha_salgado = input("Escolha os salgados desejados : \n"
+                        "Coxinha, Empada de Frango, Empada de Carne, \n" 
+                        "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
+                        "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
+                        "Croquete de Calabresa, Enroladinho de Salsicha.\n")
+                valor_salgados = opcao_salgados * 0.80
+                print(f"O valor dos seus doces será de: {valor_salgados}")
+            else:
+                print("Opção invalida, tente novamente")
+
+            novo_pedido = {
+                "Quantidade" : opcao_salgados,
+                "Salgado" : tipo_salgados,
+                "Valor" : valor_salgados,
+
+            }
+
+            banco["Pedido"].append(novo_pedido)
+            print("Cadastro realizado com sucesso.")
