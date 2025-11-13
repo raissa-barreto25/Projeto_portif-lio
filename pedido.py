@@ -40,17 +40,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 03 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
                     escolha_salgado = input("Escolha os salgados desejados (até 03 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha.\n")
                 
                 case "2":
                     produto = "Kit Festa 2 - R$ 155,00"
@@ -63,17 +63,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 03 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
                     escolha_salgado = input("Escolha os salgados desejados (até 03 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha. \n")
 
                 case "3":
                     produto = "Kit Festa 3 - R$ 178,00"
@@ -86,17 +86,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 03 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
                     escolha_salgado = input("Escolha os salgados desejados (até 03 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha.\n")
 
                 case "4":
                     produto = "Kit Festa 4 - R$ 205,00"
@@ -109,17 +109,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 03 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.\n")
                     escolha_salgado = input("Escolha os salgados desejados (até 03 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha. \n")
 
                 case "5":
                     produto = "Kit Festa 5 - R$ 238,00"
@@ -132,17 +132,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 03 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
                     escolha_salgado = input("Escolha os salgados desejados (até 03 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha. \n")
 
                 case "6":
                     produto = "Kit Festa 6 - R$ 310,00"
@@ -155,17 +155,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 05 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
                     escolha_salgado = input("Escolha os salgados desejados (até 05 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha. \n")
 
                 case "7":
                     produto = "Kit Festa 7 - R$ 375,00"
@@ -178,17 +178,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 05 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
                     escolha_salgado = input("Escolha os salgados desejados (até 05 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha. \n")
 
                 case "8":
                     produto = "Kit Festa 8 - R$ 438,00"
@@ -201,17 +201,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 05 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
                     escolha_salgado = input("Escolha os salgados desejados (até 05 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha. \n")
 
                 case "9":
                     produto = "Kit Festa 9 - R$ 530,00"
@@ -224,17 +224,17 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
                     escolha_doces = input("Escolha os doces desejados (até 05 opções): \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
-                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce.")
+                    "Napolitano, Crispim, Chocopower, Moranguinho, Surpresa de uva, Empada doce. \n")
                     escolha_salgado = input("Escolha os salgados desejados (até 05 opções): \n"
                     "Coxinha, Empada de Frango, Empada de Carne, \n" 
                     "Risole de Carne, Risole de Queijo e Presunto, Bolinha de Queijo, \n"
                     "Bolinha de Charque, Pastel Frito de Carne (com Açúcar), Pastel de Forno(Carne ou Frango), \n"
-                    "Croquete de Calabresa, Enroladinho de Salsicha.")
+                    "Croquete de Calabresa, Enroladinho de Salsicha. \n")
 
             novo_pedido = {
                 "Kit" : produto,
@@ -273,8 +273,8 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
 
                 case "2":
                     bolo = "Bolo 1,5kg - R$ 97,00"
@@ -287,8 +287,8 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
 
                 case "3":
                     bolo = "Bolo 2kg - R$ 130,00"
@@ -301,8 +301,8 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
 
                 case "4":
                     bolo = "Bolo 3kg - R$ 195,00"
@@ -315,8 +315,8 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
 
                 case "5":
                     bolo = "Bolo 3kg (Bolo de 02 andares) - R$ 230,00"
@@ -329,8 +329,8 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
 
                 case "6":
                     bolo = "Bolo 4kg - R$ 260,00"
@@ -343,8 +343,8 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho.\n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
 
                 case "7":
                     bolo = "Bolo 5kg (bolo de 02 andares) - R$ 360,00"
@@ -357,8 +357,8 @@ while True:
                     "Crocante Doce de Leite, Sedução, Delicia de Abacaxi, \n" 
                     "Brigadeiro Branco, Maracujá, Chocojá, \n" 
                     "Paçoca, Sensação, Ninho, \n" 
-                    "Choconinho, Óreo, Casadinho.")
-                    tema_bolo = input("Qual tema e cores do bolo? ")
+                    "Choconinho, Óreo, Casadinho. \n")
+                    tema_bolo = input("Qual tema e cores do bolo? \n")
 
             novo_pedido = {
                 "Bolo" : bolo,
@@ -375,7 +375,7 @@ while True:
             print("Doces individuais \n"
                   "Unidade - R$ 0,90")
             
-            opcao_doces = int(input("Quantos doces deseja ?"))
+            opcao_doces = int(input("Quantos doces deseja ? \n"))
             escolha_doce = input("Escolha os doces desejados : \n"
                     "Brigadeiro tradicional, Brigadeiro Colorido, Brigadeiro Branco, \n"
                     "Prestígio,Bem casado, Bem casado Sedução, Bem casado Sensação, \n" 
@@ -399,8 +399,8 @@ while True:
                   "1- Unidade (Frito)- R$ 0,90 \n" \
                   "2- Unidade (Congelado) - 0,80")
             
-            opcao_salgados = int(input("Quantos salgados deseja ?"))
-            tipo_salgados = input("Deseja Frito ou Congelado? ").upper()
+            opcao_salgados = int(input("Quantos salgados deseja ? \n"))
+            tipo_salgados = input("Deseja Frito ou Congelado? \n").upper()
             if tipo_salgados == "FRITO":
                 escolha_salgado = input("Escolha os salgados desejados : \n"
                         "Coxinha, Empada de Frango, Empada de Carne, \n" 
@@ -424,6 +424,57 @@ while True:
                 "Quantidade" : opcao_salgados,
                 "Salgado" : tipo_salgados,
                 "Valor" : valor_salgados,
+            }
+
+            banco["Pedido"].append(novo_pedido)
+            print("Cadastro realizado com sucesso.")
+
+    match opcao:
+        case "5":
+            print("Mini Cupcake \n"
+                  "kit com 15 - R$ 45,00")
+            
+            opcao_cupcake = int(input("Quantos kits deseja ? "))
+            opcao_massa = input("Escolha a massa do Mini Cupcake: \n " 
+                    "Massa branca ou massa de chocolate? \n")
+            opcao_recheio = input("Escolha o recheio do seu Mini Cupcake (1 opção): \n" 
+            "Brigadeiro, Brigadeiro Branco, Brigadeiro Ninho, Doce de Leite \n" 
+            "Paçoca, Beijinho, Morango")
+            tema_cupcake = input("Qual tema e cores do Mini cupcake? \n")
+            valor_cupcake = opcao_doces * 45
+            print(f"O valor dos seus doces será de: {valor_cupcake}")
+
+            novo_pedido = {
+                "Quantidade" : opcao_cupcake,
+                "Massa" : opcao_massa,
+                "Recheio" : opcao_recheio,
+                "Tema" : tema_cupcake,
+                "Valor" : valor_cupcake
+
+            }
+
+            banco["Pedido"].append(novo_pedido)
+            print("Cadastro realizado com sucesso.")
+
+    match opcao:
+        case "6":
+            print("Bolo Caseirinho \n"
+                  "Bolo de 600g - R$ 20,00")
+            
+            opcao_caseirinho = int(input("Quantos bolos deseja ? "))
+            opcao_massa = input("Escolha a massa do caseirinho: \n " 
+                    "Massa branca ou massa de chocolate? \n")
+            opcao_recheio = input("Escolha o recheio do bolo (1 opção): \n" 
+            "Brigadeiro Chocolate, Beijinho, Brigadeiro Branco \n" 
+            "Paçoca crocamte, Morango, Ninho \n")
+            valor_caseirinho = opcao_doces * 20
+            print(f"O valor dos seus doces será de: {valor_caseirinho}")
+
+            novo_pedido = {
+                "Quantidade" : opcao_caseirinho,
+                "Massa" : opcao_massa,
+                "Recheio" : opcao_recheio,
+                "Valor" : valor_cupcake
 
             }
 
